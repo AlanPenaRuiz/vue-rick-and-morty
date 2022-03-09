@@ -1,4 +1,5 @@
 <template>
+	<link rel="stylesheet" href="assets/styles.css" />
 	<nav>
 		<router-link to="/">Home</router-link>
 		|

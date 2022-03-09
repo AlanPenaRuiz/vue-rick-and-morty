@@ -13,6 +13,9 @@ export default {
 	getEvents() {
 		return apiClient.get("/");
 	},
+	getEventsPage(page) {
+		return apiClient.get("?page=" + page);
+	},
 	getEvent(id) {
 		return apiClient.get("/" + id);
 	}
