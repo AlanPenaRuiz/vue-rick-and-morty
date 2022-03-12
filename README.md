@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/60108538/157361378-46847221-f3cd-4cc3-bb4a-78e3435e0bad.png)
+
+![11e251d945a2bba6059ab8712b635e84](https://user-images.githubusercontent.com/60108538/158031284-43db5806-b01a-4913-8169-88dd3e24f6f8.png)
 
 
 # rick-morty
