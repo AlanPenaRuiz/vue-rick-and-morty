@@ -1,5 +1,4 @@
 <template>
-	<link rel="stylesheet" href="assets/styles.css" />
 	<nav>
 		<router-link to="/">Home</router-link>
 		|
@@ -24,6 +23,10 @@ nav {
 nav a {
 	font-weight: bold;
 	color: #2c3e50;
+}
+
+.nav-details a {
+	color: white;
 }
 
 nav a.router-link-exact-active {

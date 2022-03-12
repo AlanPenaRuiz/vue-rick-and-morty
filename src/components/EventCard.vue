@@ -49,7 +49,8 @@ export default {
 <style>
 .event-card {
 	width: 320px;
-	height: 450px;
+	height: auto;
+	min-height: 450px;
 	background: rgb(60, 62, 68);
 	border-radius: 20px;
 	overflow: hidden;

@@ -15,6 +15,16 @@
 				<span>Status: {{ event ? event.status : "" }}</span>
 			</div>
 			<img :src="event ? event.image : ''" />
+			<nav class="nav-details">
+				<router-link :to="{ name: 'EventDetails' }"
+					>Details</router-link
+				>
+				|
+				<router-link :to="{ name: 'EventLocation' }"
+					>Location</router-link
+				>
+			</nav>
+			<router-view :event="event" />
 		</div>
 	</div>
 </template>
@@ -37,6 +47,11 @@ export default {
 			})
 			.catch((error) => {
 				console.log(error);
+
+				this.$router.push({
+					name: "404Resource",
+					params: { resource: "event" }
+				});
 			});
 	}
 };

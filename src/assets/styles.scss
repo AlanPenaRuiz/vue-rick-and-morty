@@ -1,3 +1,5 @@
+$primary-color: #42b983;
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -5,51 +7,40 @@
     height: 20;
     margin-bottom: 12px;
 }
-button {
-    position: relative;
-    display: inline-flex;
-    width: 180px;
-    height: 55px;
-    margin: 0 15px;
-    perspective: 1000px;
-    font-size: 19px;
-    letter-spacing: 1px;
-    transform-style: preserve-3d;
-    transform: translateZ(-25px);
-    transition: transform 0.25s;
-    font-family: "Montserrat", sans-serif;
-    background: none;
-    border: 0;
 
-    &:before,
-    &:after {
-        position: absolute;
-        content: "PREV";
-        height: 55px;
-        width: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 5px solid black;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-    &:before {
-        color: #fff;
-        background: #000;
-        transform: rotateY(0deg) translateZ(25px);
-    }
-    &:after {
-        color: #000;
-        transform: rotateX(90deg) translateZ(25px);
-    }
-    &:hover {
-        transform: translateZ(-25px) rotateX(-90deg);
-    }
-    &:last-child {
-        &:before,
-        &:after {
-            content: "NEXT";
-        }
-    }
+button {
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  margin-right: 5px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+button:hover,
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: $primary-color;
+}
+
+button:active {
+  opacity: .5;
 }

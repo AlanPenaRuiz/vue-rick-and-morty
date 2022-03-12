@@ -1,7 +1,7 @@
 <template>
 	<div class="btn-container">
-		<button v-on:click="prevPage"></button>
-		<button v-on:click="nextPage"></button>
+		<button v-on:click="prevPage">PREV</button>
+		<button v-on:click="nextPage">NEXT</button>
 	</div>
 	<div class="container">
 		<EventCard v-for="event in events" :key="event.id" :event="event" />
@@ -28,7 +28,7 @@ export default {
 	created() {
 		EventService.getEvents()
 			.then((response) => {
-				//console.log("events:", response.data.results);
+				console.log("events:", response.data.results);
 				this.events = response.data.results;
 			})
 			.catch((error) => {
